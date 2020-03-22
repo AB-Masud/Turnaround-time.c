@@ -6,3 +6,9 @@ int main()
     float average;
     printf("enter total number of process: );
     printf("enter burst time for each process: );
+    for(i=0;i<n;i++)
+    {
+        printtf("burst time of process p%d: ",i);
+        scanf("%d",&burst_time[i]);
+        process[i]=i;
+    }

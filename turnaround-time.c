@@ -12,3 +12,17 @@ int main()
         scanf("%d",&burst_time[i]);
         process[i]=i;
     }
+     for(i=0;i<n-1;i++)
+           {
+               for(j=i+1;j<n;j++)
+               {
+                   if(bt[i]>bt[j])
+                   {
+                       temp=bt[i];
+                       bt[i]=bt[j];
+                       bt[j]=temp;
+                       temp=p[i];
+                       p[i]=p[j];
+                       p[j]=temp;
+                    }
+               

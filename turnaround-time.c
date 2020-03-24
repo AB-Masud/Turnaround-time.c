@@ -25,4 +25,23 @@ int main()
                        p[i]=p[j];
                        p[j]=temp;
                     }
+                 wt[0]=0;
+                   for(i=1;i<n;i++)
+                   {
+                       wt[i]=wt[i-1]+bt[i-1];
+                   }
+                   for
+                   {
+                       sum+=wt[i];
+                   }
+                   avg=(float)sum/n;
+                   printf(("waiting timing for each process: );
+                           for(i=0;i<n;i)
+                           {
+                               printf("waiting time for process p%d id %d",p[i]);
+                           }
+                           printf("average waiting time is %f",avg);
+                           getch();
+                           return 0;
+                           }
                

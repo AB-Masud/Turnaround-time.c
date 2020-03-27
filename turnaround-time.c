@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<conio.h>
 int main()
 {
     int burst_time[10],process[10],n,temp,i,j,waiting_time[10],sum=0;
@@ -25,23 +24,25 @@ int main()
                        p[i]=p[j];
                        p[j]=temp;
                     }
+               }
+            
+           }
                  wt[0]=0;
                    for(i=1;i<n;i++)
                    {
                        wt[i]=wt[i-1]+bt[i-1];
                    }
-                   for
+                   for(i=0;i<n;i++)
                    {
                        sum+=wt[i];
                    }
                    avg=(float)sum/n;
-                   printf(("waiting timing for each process: );
-                           for(i=0;i<n;i)
+                   printf("waiting timing for each process: );
+                           for(i=0;i<n;i++)
                            {
-                               printf("waiting time for process p%d id %d",p[i]);
+                               printf("waiting time for process p%d id %d",p[i],wt[i]);
                            }
                            printf("average waiting time is %f",avg);
-                           getch();
                            return 0;
                            }
                
